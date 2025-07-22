@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "start": "node app.js",
+    "postinstall": "prisma generate",
+    "render-postbuild": "prisma migrate deploy"
   },
   "keywords": [],
   "author": "",
